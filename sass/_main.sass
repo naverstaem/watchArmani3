@@ -357,47 +357,63 @@ header
       font-size: 18px
       text-transform: none
 
-  &__bottom
-    margin-top: 40px
-  &__images
-    margin-top: -20px
+  &__watch
+    margin-top: -10px
     position: relative
-    float: left
-    width: 440px
-    .photo__item
-      width: 210px
-      height: 190px
-      margin-top: 15px
+    float: right
+    width: 330px
+    margin-right: 0
+    text-align: center
+
+    img
+      width: 330px
+      height: 500px
       position: relative
+      display: block
+    .prev
+      position: absolute
+      content: ""
+      +s(prev)
+      top: 39%
+      left: -35px
+      cursor: pointer
+
+    .next
+      position: absolute
+      content: ""
+      +s(next)
+      top: 39%
+      right: 0
+      cursor: pointer
+
+    .threesixty
+      position: absolute
+      text-align: center
+      padding-top: 35px
+      +box
+      top: 0px
+      left: -70px
+      +s(360)
+      font-size: 36px
+      color: #5a5a5a
+      content: ""
+      font-family: 'conv_pfdintextcondpro-regular'
+  &__video
+    display: inline-block
+    vertical-align: middle
+    font-family: 'conv_pfdintextcondpro-light'
+    font-size: 18px
+    color: #1e1e1e
+    text-decoration: underline
+    &:hover
+      text-decoration: none
+    span
       display: inline-block
-      +border-radius(6px)
-      &:nth-child(2n+2)
-        margin-left: 15px
-      img
-        display: block
-        +border-radius(6px)
-      span
-        position: absolute
-        top: 0
-        left: 0
-        right: 0
-        bottom: 0
-        +opacity(0)
-        z-index: 1
-        +border-radius(6px)
-        background: rgba(#fff, .6)
-        &:after
-          content: ""
-          position: absolute
-          +s(zoom)
-          top: 50%
-          left: 50%
-          +transform(translate(-50%,-50%))
-        &:hover
-          +opacity(1)
-
-
-
+      position: relative
+      vertical-align: middle
+      +s(video-ico)
+      margin-right: 15px
+       
 
 .charact
   +clr
