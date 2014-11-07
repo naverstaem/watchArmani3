@@ -78,7 +78,7 @@
     +background-image(linear-gradient(to left, #f97d59 0%, #95231d 50%, #95231d 100%))
 
     &:hover
-      background: lighten(#ffef00, 10%)
+      background: lighten(#95231d, 10%)
       text-decoration: underline
 
 
@@ -624,37 +624,73 @@ header
   padding-bottom: 60px
   .order_in
     @extend %in
-    width: 1010px
+    width: 800px
   h2
     margin-bottom: 35px
     text-align: center
   &__item
     vertical-align: top
-    width: 320px
-    height: 510px
-    text-align: center
-    padding-top: 25px
+    width: 365px
+    text-align: left
+    padding: 25px 20px
     display: inline-block
-    margin-right: 18px
-    border: solid 5px rgb(230, 230, 230)
+    margin-right: 65px
+    border: solid 2px rgb(220, 220, 220)
     background: #ffffff
     +box
     &:last-child
       margin-right: 0
-  &__caption
-    font-size: 24px
-    font-family: 'conv_pfdintextcondpro-light'
-    margin-bottom: 10px
-    color: #281e1e
-    text-transform: none
   &__img
     display: inline-block
-    width: 290px
-    height: 195px
+    width: 140px
+    height: 250px
+    vertical-align: top
+    margin-right: 25px
     img
       display: block
-  &__bottom
-    margin-top: 35px
+  &__text
+    display: inline-block
+    width: 46%
+  &__caption
+    font-size: 30px
+    font-family: 'conv_pfdintextcondpro-thin'
+    margin-bottom: 10px
+    color: #f0641e
+    text-transform: none
+    line-height: 1em
+
+  &__intro
+    font-family: 'conv_pfdintextcondpro-light'
+    font-size: 14px
+    color: #1e1e1e
+  &__more
+    color: #dc500f
+    font-size: 14px
+    &:hover
+      text-decoration: none
+
+  &__form
+    display: inline-block
+    width: 100%
+    vertical-align: middle
+    margin-top: 10px
+    form
+      margin: 0
+      input
+        width: 100%
+        height: 50px
+        border: 2px solid #e5e5e5
+        @include border-radius(2px)
+        @include background-clip(padding-box)
+        background-color: #efefef
+
+        button
+          font-size: 24px
+          margin-top: 0
+          padding: 15px 21px
+
+
+
   &__price
     +box
     line-height: 1.4em
@@ -662,42 +698,23 @@ header
     display: inline-block
     vertical-align: middle
     margin-top: 8px
+    margin-bottom: 10px
     h3
-      font-family: 'conv_pfdintextcondpro-thin'
-      font-size: 48px
+      font-family: 'conv_pfdintextcondpro-regular'
+      font-size: 36px
       font-weight: normal
       color: #1e1e1e
       vertical-align: middle
+      margin-bottom: 6px
       span
         font-family: 'als_rublregular'
         font-size: 24px
     h4
       display: inline-block
-      font-size: 18px
-      color: #5a5a5a
-  &__text
-    padding: 20px 15px 0
-    font-size: 18px
-    color: #787878
-    text-align: center
-    margin-bottom: 5px
-  &__more
-    color: #dc500f
-    font-size: 18px
-    &:hover
-      text-decoration: none
+      font-size: 24px
+      color: #787878
+      font-weight: normal
 
-  &__form
-    display: inline-block
-    vertical-align: middle
-    margin-left: 25px
-    form
-      margin: 0
-      input
-      button
-        font-size: 24px
-        margin-top: 0
-        padding: 15px 21px
 
 
 
