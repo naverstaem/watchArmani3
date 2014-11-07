@@ -265,8 +265,10 @@ header .header_in .header__right:after, .bottom .header_in .header__right:after 
 .order { margin-top: 0; padding-top: 65px; padding-bottom: 60px; }
 .order .order_in { width: 800px; }
 .order h2 { margin-bottom: 35px; text-align: center; }
-.order__item { vertical-align: top; width: 365px; text-align: left; padding: 25px 20px; display: inline-block; margin-right: 65px; border: solid 2px gainsboro; background: #ffffff; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+.order .row:first-child { margin-bottom: 75px; }
+.order__item { position: relative; vertical-align: top; width: 365px; text-align: left; padding: 25px 20px; display: inline-block; margin-right: 65px; border: solid 2px gainsboro; background: #ffffff; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 .order__item:last-child { margin-right: 0; }
+.order__item:after { position: absolute; content: "-20%"; background: black; width: 50px; height: 50px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; color: #ffffff; font-size: 18px; text-align: center; top: -25px; right: -25px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding-top: 14px; }
 .order__img { display: inline-block; width: 140px; height: 250px; vertical-align: top; margin-right: 25px; }
 .order__img img { display: block; }
 .order__text { display: inline-block; width: 46%; }

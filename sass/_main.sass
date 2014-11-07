@@ -628,7 +628,12 @@ header
   h2
     margin-bottom: 35px
     text-align: center
+  .row
+    &:first-child
+      margin-bottom: 75px
+
   &__item
+    position: relative
     vertical-align: top
     width: 365px
     text-align: left
@@ -640,6 +645,21 @@ header
     +box
     &:last-child
       margin-right: 0
+    &:after
+      position: absolute
+      content: "-20%"
+      background: black
+      width: 50px
+      height: 50px
+      +border-radius(2px)
+      color: #ffffff
+      font-size: 18px
+      text-align: center
+      top: -25px
+      right: -25px
+      +box
+      padding-top: 14px
+
   &__img
     display: inline-block
     width: 140px
