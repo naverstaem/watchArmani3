@@ -285,14 +285,10 @@ header .header_in .header__right:after, .bottom .header_in .header__right:after 
 .order__price h3 span { font-family: "als_rublregular"; font-size: 24px; }
 .order__price h4 { display: inline-block; font-size: 24px; color: #787878; font-weight: normal; }
 
-.bottom { padding-top: 35px; }
+.bottom { padding-top: 35px; height: 840px; }
 .bottom .header_in--bottom { margin-top: 0px !important; }
 
-.questions { text-align: center; padding: 40px 0; }
-.questions .button--questions { display: inline-block; text-align: center; font-family: "Conv_PFDinTextCondPro-Light"; font-weight: normal; font-style: normal; font-size: 24px; text-decoration: underline; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; border: solid 2px #fadc28; padding: 17px 61px; color: #1e1e1e; margin-top: 15px; }
-.questions .button--questions:hover { text-decoration: none; }
-
-footer { box-sizing: border-box; background: url(../img/footer_bg.jpg) center center no-repeat; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; height: 100px; text-align: center; padding-top: 16px; }
-footer p { font-size: 16px; color: #787878; }
-footer p a { color: #963269; }
+footer { box-sizing: border-box; background: #fff; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; height: 120px; text-align: center; padding-top: 16px; }
+footer p { font-size: 16px; color: #787878; line-height: 1.5em; }
+footer p a { color: #aa2828; }
 footer p a:hover { text-decoration: none; }
